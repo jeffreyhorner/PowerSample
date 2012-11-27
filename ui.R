@@ -7,9 +7,9 @@ shinyUI(pageWithSidebar(
    headerPanel("Power and Sample Size with spower from Hmisc"),
 
    sidebarPanel(
-      numericInput("p1", "1-year Survival Rate:", .95),
-      numericInput("p2", "3-year Survival Rate:", .7),
-      numericInput("mo", "Treatment Effect Start Month:", 9),
+      numericInput("p1", "1-year Survival Rate:", .95,step=.01),
+      numericInput("p2", "3-year Survival Rate:", .7,step=.01),
+      numericInput("mo", "Treatment Effect Start Month:", 9,step=1),
 
       helpText('This example demonstrates the flexibility of spower and
       related functions from Hmisc. We simulate a 2-arm (350 subjects/arm)

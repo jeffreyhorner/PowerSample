@@ -2,7 +2,6 @@ library(shiny)
 library(Hmisc)
 
 rcens <- function(n) 1 + (5-1) * (runif(n) ^ .5)
-par(mfrow=c(2,2))
 
 # Define server logic
 shinyServer(function(input, output) {
